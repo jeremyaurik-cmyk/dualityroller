@@ -1,0 +1,10 @@
+{
+  "name": "Daggerheart — Hope & Fear Dice",
+  "description": "Duality dice roller implementing Daggerheart Hope & Fear mechanics for Owlbear Rodeo.",
+  "version": "0.1.0",
+  "author": "Your Name",
+  "icon": "icon.svg",
+  "type": "popover",
+  "entry": "https://github.com/jeremyaurik-cmyk/dualityroller.git",
+  "permissions": []
+}

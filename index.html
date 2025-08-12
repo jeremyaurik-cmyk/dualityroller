@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daggerheart — Hope & Fear Roller</title>
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Daggerheart — Duality Roller</h1>
+
+    <label>Player / Actor name
+      <input id="playerName" type="text" placeholder="(optional)" />
+    </label>
+
+    <label>Modifier (trait / skill)
+      <input id="modifier" type="number" value="0" />
+    </label>
+
+    <label>Difficulty (DC)
+      <input id="dc" type="number" value="10" />
+    </label>
+
+    <label>Advantage / Disadvantage
+      <select id="advantage">
+        <option value="0">None</option>
+        <option value="1">Advantage (+1d6)</option>
+        <option value="-1">Disadvantage (-1d6)</option>
+      </select>
+    </label>
+
+    <label>Private roll?
+      <input id="isPrivate" type="checkbox" />
+    </label>
+
+    <div class="buttons">
+      <button id="rollBtn">Roll Duality</button>
+      <button id="clearLog">Clear</button>
+    </div>
+
+    <div id="log" class="log" aria-live="polite"></div>
+
+    <footer>
+      <small>Implements Duality (two d12s). Adds/subtracts a d6 for adv/dis. Critical = matching d12s.</small>
+    </footer>
+  </div>
+
+  <script src="src/main.js"></script>
+</body>
+</html>
